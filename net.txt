@@ -1,1 +1,13 @@
-hacked by d7net
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ngencrott By d7net</title>
+	<meta content='width=device-width, initial-scale=1' name='viewport'/>
+	<meta content='blogger' name='generator'/>
+</head>
+<body>
+ngopi coiii mantap ini
+</body>
+</html>
