@@ -8,6 +8,7 @@
 	<meta content='blogger' name='generator'/>
 </head>
 <body>
+Hacked By d7net<br>
 ngopi coiii mantap ini
 </body>
 </html>
