@@ -1,0 +1,48 @@
+  <html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TerCrottz</title>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <meta content='blogger' name='generator'/>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+    <style>
+    body	{
+      Background: black;
+      Color: white;
+      text-align: center;
+      font-size: 15pt;
+      font-family: 'Dosis', sans-serif;
+      letter-spacing: 2px;
+      line-height: 25px;
+    }
+    a 	{
+      text-decoration: none;
+      color: white;
+    }
+    a:hover	{
+      text-decoration: none;
+      color: maroon;
+    }
+    d7net {
+      font-size: 19pt;
+      font-family: 'Shadows Into Light', cursive;
+    }
+    h1	{
+      font-size: 30pt;
+    }
+    img {
+        border-radius: 50%;
+    }
+    </style>
+    <body><br>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Sedgwick+Ave" rel="stylesheet">
+ <img src='https://i.pinimg.com/474x/60/2a/28/602a28363092d1a21f36c62a17f3bde4.jpg' align="center" style="width:300px; height:300px;"><br><br>
+    <d7net>My Bitch Is Your System >,< </d7net><br><br> Hacked by<font color=red> D7net</font>
+     | D704T <br><br>
+  <br>Greetz : ./BarBarking - ./Mr.TahuSumedang - Syntax7 - N4ST4R_ID - VenomGhost <br> NamiSec - Mr.Grim   - Wans_x4 - YSSCTMR - matthews<br> and all defacer indonesia<br><br>
+    </body>
+</html>
