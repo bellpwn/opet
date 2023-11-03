@@ -1,12 +1,12 @@
-  <html>
+<html>
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TerCrottz</title>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <meta content='blogger' name='generator'/>
-    <meta name="keywords" content="Hacked"/>
-    <meta name="description" content="hacked"/>
+    <meta content="keywords" name="hacked">
+    <meta content="description" name="hacked by d7net">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
