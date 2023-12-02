@@ -5,7 +5,6 @@
     <title>TerCrottz</title>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
     <meta content='blogger' name='generator'/>
-    <meta content="keywords" name="hacked">
     <meta content="description" name="hacked by d7net">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +44,6 @@
  <img src='https://i.pinimg.com/474x/60/2a/28/602a28363092d1a21f36c62a17f3bde4.jpg' align="center" style="width:300px; height:300px;"><br><br>
     <d7net>My Bitch Is Your System >,< </d7net><br><br> Hacked by<font color=red> D7net</font>
      | D704T <br><br>
-  <br>Greetz : ./BarBarking - ./Mr.TahuSumedang - Syntax7 - N4ST4R_ID - VenomGhost <br> NamiSec - Mr.Grim   - Wans_x4 - CHYBEE1337 - matthews<br> and all defacer indonesia<br><br>
+  <br>Greetz : ./BarBarking - ./Mr.TahuSumedang - Syntax7 - N4ST4R_ID - VenomGhost <br> NamiSec - Mr.Grim - CHYBEE1337 - matthews - 4LM05TH3V!L - Boss Ranzen - X3ND1<br> and all defacer indonesia<br><br>
     </body>
 </html>
